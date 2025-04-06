@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import ButtonComponent from "../components/Navigation/Button"
 import Lottie from "lottie-react"
 import chevronDown from "../assets/animations/chevronDown.json"
 
@@ -7,8 +6,9 @@ const HeaderContainer = styled.div`
   background-color: #171824;
   height: 100vh;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
 `
 
 // const Menu = styled.ul`
@@ -24,36 +24,46 @@ const HeaderContainer = styled.div`
 //   }
 // `
 
+const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`
+
 const Title = styled.h1`
   font-size: var(--font-size-h1-mob);
   color: var(--headline-color);
   font-family: var(--font-family-headlines);
   text-align: left;
   line-height: 1.5;
-  margin-left: 80px;
-  margin-top: 60px;
+  margin-top: 40px;
 
   @media (min-width: 768px) {
     font-size: var(--font-size-h1-desktop);
   }
 `
 
-const MyName = styled.p`
+const SubTitle = styled.p`
   font-family: var(--font-family-text);
   font-size: var(--font-size-text-mob);
   color: #a189ff;
-  align-self: flex-start;
-  margin-left: 80px;
+  align-self: center;
+
+  @media (min-width: 768px) {
+    margin-left: 345px;
+  }
 `
 
 const CodeText = styled.span`
   font-size: var(--font-size-text-mob);
   font-family: var(--font-family-headlines);
   white-space: pre;
-  color: #444444;
-  margin-bottom: 20px;
+  color: #332940;
   text-align: left;
-  margin-right: 250px;
+  margin-left: 0;
+  margin-right: 800px;
+  display: block;
 
   @media (max-width: 767px) {
     display: none;
@@ -75,14 +85,12 @@ const AnimationWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `
 
-export const Header = () => {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
+export const Header = ({ scrollToRef }) => {
+  const handleScroll = () => {
+    scrollToRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
@@ -92,27 +100,21 @@ export const Header = () => {
         <header>
             <h1>
 `}</CodeText>
-      <Title>FRONTEND DEVELOPER.</Title>
-      <MyName>//LOVISA ÅBERG</MyName>
+
+      <TitleWrapper>
+        <Title>LOVISA ÅBERG</Title>
+        <SubTitle>//FRONTEND DEVELOPER, UX-DESIGNER</SubTitle>
+      </TitleWrapper>
+
       <CodeText>{`
             </h1>
        </header>
     </body>`}</CodeText>
 
-      <IntroText>
-        I bridge code & UX-Design to build accessible, user-friendly
-        experiences.
-      </IntroText>
+      <IntroText>Code. UX. Accessibility.</IntroText>
 
-      <ButtonComponent
-        label="Contact"
-        onClick={() => scrollToSection("contact")}
-        bgColor="#5D38F2"
-        hoverColor="#8D72F8"
-      />
-
-      <AnimationWrapper>
-        <Lottie animationData={chevronDown} loop={true} />{" "}
+      <AnimationWrapper onClick={handleScroll}>
+        <Lottie animationData={chevronDown} loop={true} />
       </AnimationWrapper>
     </HeaderContainer>
   )
