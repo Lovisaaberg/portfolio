@@ -7,22 +7,41 @@ const HeaderContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 40px;
   align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 40px 60px;
+  }
 `
 
-// const Menu = styled.ul`
-//   list-style: none;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: flex-end;
-//   font-family: var(--font-family-headlines);
-//   font-size: 18px;
+const Menu = styled.ul`
+  display: none;
 
-//   @media (max-width: 768px) {
-//     display: none;
-//   }
-// `
+  @media (min-width: 768px) {
+    list-style: none;
+    display: flex;
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-medium);
+    color: var(--text-color-primary);
+    margin-bottom: 60px;
+    gap: 36px;
+    justify-content: flex-end;
+    width: 100%;
+  }
+`
+
+const MenuLink = styled.li`
+  @media (min-width: 768px) {
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #8d72f8;
+    }
+  }
+`
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -59,7 +78,7 @@ const CodeText = styled.span`
   font-size: var(--font-size-text-mob);
   font-family: var(--font-family-headlines);
   white-space: pre;
-  color: #332940;
+  color: #2b2b2b;
   text-align: left;
   margin-left: 0;
   margin-right: 800px;
@@ -74,8 +93,11 @@ const IntroText = styled.p`
   font-size: var(--font-size-text-mob);
   font-family: var(--font-family-text);
   color: var(--text-color-primary);
-  margin: 30px;
-  margin-top: auto;
+  margin-top: 350px;
+
+  @media (min-width: 768px) {
+    margin-top: 60px;
+  }
 `
 
 const AnimationWrapper = styled.div`
@@ -88,13 +110,23 @@ const AnimationWrapper = styled.div`
   cursor: pointer;
 `
 
-export const Header = ({ scrollToRef }) => {
-  const handleScroll = () => {
-    scrollToRef.current?.scrollIntoView({ behavior: "smooth" })
+export const Header = () => {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
     <HeaderContainer>
+      <Menu>
+        <MenuLink onClick={() => scrollToSection("projects")}>
+          .Projects
+        </MenuLink>
+        <MenuLink onClick={() => scrollToSection("skills")}>
+          .Skills & Tech
+        </MenuLink>
+        <MenuLink onClick={() => scrollToSection("contact")}>.Contact</MenuLink>
+      </Menu>
+
       <CodeText>{`
       <body>
         <header>
@@ -113,7 +145,7 @@ export const Header = ({ scrollToRef }) => {
 
       <IntroText>Code. UX. Accessibility.</IntroText>
 
-      <AnimationWrapper onClick={handleScroll}>
+      <AnimationWrapper onClick={() => scrollToSection("projects")}>
         <Lottie animationData={chevronDown} loop={true} />
       </AnimationWrapper>
     </HeaderContainer>
