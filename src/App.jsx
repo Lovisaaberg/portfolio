@@ -1,5 +1,5 @@
 import { Header } from "./components/Header"
-import { Projects } from "./components/Projects"
+import { Projects } from "./components/Projects/Projects"
 // import { Skills } from "./components/Skills"
 // import { Contact } from "./components/Contact"
 // import { Footer } from "./components/Footer"

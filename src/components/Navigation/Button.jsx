@@ -1,42 +1,37 @@
-import React from "react"
 import styled from "styled-components"
 
 const Button = styled.button`
-  background-color: ${({ bgColor }) => bgColor || "#5D38F2"};
-  color: ${({ textColor }) => textColor || "white"};
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--font-family-text);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  padding: 12px 42px;
+  border-radius: 48px;
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ hoverColor }) => hoverColor || "#8D72F8"};
+    background-color: #8d72f8;
   }
 
   &:focus {
-    outline: 3px solid #4c37a1;
+    outline: 3px solid #8d72f8;
   }
 `
 
-const ButtonComponent = ({
-  label,
-  onClick,
-  bgColor,
-  hoverColor,
-  textColor,
-}) => {
-  return (
-    <Button
-      onClick={onClick}
-      bgColor={bgColor}
-      hoverColor={hoverColor}
-      textColor={textColor}
-    >
-      {label}
-    </Button>
-  )
+const PrimaryButton = styled(Button)`
+  background-color: #5d38f2;
+  color: white;
+  border: none;
+`
+
+const SecondaryButton = styled(Button)`
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #5d38f2;
+`
+
+const ButtonComponent = ({ label, onClick, variant = "primary" }) => {
+  const ButtonToUse = variant === "secondary" ? SecondaryButton : PrimaryButton
+
+  return <ButtonToUse onClick={onClick}>{label}</ButtonToUse>
 }
 
 export default ButtonComponent

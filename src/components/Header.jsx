@@ -135,7 +135,7 @@ export const Header = () => {
 
       <TitleWrapper>
         <Title>LOVISA ÅBERG</Title>
-        <SubTitle>//FRONTEND DEVELOPER, UX-DESIGNER</SubTitle>
+        <SubTitle>//FRONTEND DEVELOPER + UX</SubTitle>
       </TitleWrapper>
 
       <CodeText>{`
