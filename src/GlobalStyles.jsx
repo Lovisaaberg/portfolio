@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
   --font-size-h1-mob: 46px;
   --font-size-h2-mob: 40px;
   --font-size-h3-mob: 30px;
+  --font-size-h4-mob: 24px;
   --font-size-text-mob: 16px;
 }
 `

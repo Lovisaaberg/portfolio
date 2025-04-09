@@ -3,8 +3,7 @@ import projects from "../../data/projects.json"
 import styled from "styled-components"
 
 const ProjectsSection = styled.section`
-  padding: 80px 40px;
-  height: 100vh;
+  padding: 100px 40px 120px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +16,7 @@ const ProjectsTitle = styled.h2`
 
   @media (min-width: 768px) {
     font-size: var(--font-size-h2-desktop);
+    margin-bottom: 80px;
   }
 `
 
