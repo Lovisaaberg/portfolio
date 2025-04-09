@@ -7,7 +7,6 @@ const GlobalStyles = createGlobalStyle`
   margin: 0;
 }
 
-
 :root {
   --text-color-primary: #FFFFFF;
   --text-color-secondary: #000000;

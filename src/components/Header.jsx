@@ -1,3 +1,4 @@
+import { Typewriter } from "react-simple-typewriter"
 import styled from "styled-components"
 import Lottie from "lottie-react"
 import chevronDown from "../assets/animations/chevronDown.json"
@@ -70,7 +71,7 @@ const SubTitle = styled.p`
   align-self: center;
 
   @media (min-width: 768px) {
-    margin-left: 345px;
+    margin-left: 340px;
   }
 `
 
@@ -135,7 +136,7 @@ export const Header = () => {
 
       <TitleWrapper>
         <Title>LOVISA ÅBERG</Title>
-        <SubTitle>//FRONTEND DEVELOPER + UX</SubTitle>
+        <SubTitle>//FRONTEND DEVELOPER + UX-DESIGNER</SubTitle>
       </TitleWrapper>
 
       <CodeText>{`
@@ -143,7 +144,21 @@ export const Header = () => {
        </header>
     </body>`}</CodeText>
 
-      <IntroText>Code. UX. Accessibility.</IntroText>
+      <IntroText>
+        <Typewriter
+          words={[
+            "Welcome to my portfolio!",
+            "Building accessible web solutions",
+            "Check out my work",
+          ]}
+          cursor
+          cursorStyle="|"
+          typeSpeed={200}
+          deleteSpeed={100}
+          delaySpeed={1000}
+          loop={true}
+        />
+      </IntroText>
 
       <AnimationWrapper onClick={() => scrollToSection("projects")}>
         <Lottie animationData={chevronDown} loop={true} />

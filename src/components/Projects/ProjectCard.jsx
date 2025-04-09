@@ -20,9 +20,15 @@ const CardContainer = styled.div`
   }
 `
 
+const ImageWrapper = styled.div`
+  overflow: hidden;
+  border-radius: 10px;
+`
+
 const Image = styled.img`
   width: 240px;
   height: 240px;
+  transition: transform 0.4s ease;
 
   @media (min-width: 621px) {
     width: 400px;
@@ -32,6 +38,10 @@ const Image = styled.img`
   @media (min-width: 1280px) {
     width: 479px;
     height: 479px;
+  }
+
+  ${ImageWrapper}:hover & {
+    transform: scale(1.05);
   }
 `
 const Content = styled.div`
@@ -82,6 +92,10 @@ const Text = styled.p`
   font-family: var(--font-family-text);
   color: var(--text-color-secondary);
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-medium);
+  }
 `
 
 const ButtonWrapper = styled.div`
@@ -102,8 +116,9 @@ export const ProjectCard = ({
 }) => {
   return (
     <CardContainer $reverseOrder={reverseOrder}>
-      <Image src={image} alt={title} />
-
+      <ImageWrapper>
+        <Image src={image} alt={title} />
+      </ImageWrapper>
       <Content>
         <TagContainer>
           {tags.map((tag, index) => (

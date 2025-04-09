@@ -52,6 +52,10 @@ const SkillsList = styled.ul`
 
 const SkillsItem = styled.li`
   font-family: var(--font-family-text);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-medium);
+  }
 `
 
 export const Skills = () => {
