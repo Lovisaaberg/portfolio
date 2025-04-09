@@ -26,9 +26,9 @@ const GlobalStyles = createGlobalStyle`
   --font-size-medium: 18px;
   --font-size-large: 20px;
 
-  --font-size-h1-mob: 40px;
-  --font-size-h2-mob: 36px;
-  --font-size-h3-mob: 20px;
+  --font-size-h1-mob: 46px;
+  --font-size-h2-mob: 40px;
+  --font-size-h3-mob: 30px;
   --font-size-text-mob: 16px;
 }
 `

@@ -3,7 +3,7 @@ import projects from "../../data/projects.json"
 import styled from "styled-components"
 
 const ProjectsSection = styled.section`
-  padding: 60px 40px;
+  padding: 80px 40px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +22,15 @@ const ProjectsTitle = styled.h2`
 
 const ProjectsWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 100px;
   margin-top: 40px;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `
 
 export const Projects = () => {
@@ -34,7 +39,7 @@ export const Projects = () => {
       <ProjectsTitle>&lt;FEATURED PROJECTS&gt;</ProjectsTitle>
 
       <ProjectsWrapper>
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
             image={project.image}
@@ -43,6 +48,7 @@ export const Projects = () => {
             text={project.text}
             demoUrl={project.demoUrl}
             githubUrl={project.githubUrl}
+            reverseOrder={index % 2 === 0}
           />
         ))}
       </ProjectsWrapper>

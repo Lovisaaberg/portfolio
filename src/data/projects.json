@@ -3,9 +3,9 @@
     {
       "id": "1",
       "image": "/image1.png",
-      "tags": ["HTML5", "Styled Components", "JavaScript", "React", "APIs"],
+      "tags": ["HTML5", "Styled Components", "JavaScript", "React", "React Router", "API's"],
       "title": "Final project",
-      "text": "Final project",
+      "text": "For our final project, we designed and built a fullstack app in a team, applying everything we had learned throughout the course. We followed an agile process, used GitHub for collaboration, and regularly demoed our progress. The stack included React with React Router for the frontend, Node.js, Express, and MongoDB for the backend, with deployment via Netlify and Render. We prioritized accessibility and responsiveness, following WCAG guidelines, and conducted design and API testing using Figma and Postman.",
       "demoUrl": "https://thesolarsystemtravelguide.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-final"
     },
@@ -14,14 +14,14 @@
       "image": "/image2.png",
       "tags": ["HTML5", "Tailwind CSS", "JavaScript", "React"],
       "title": "Design handoff",
-      "text": "Transform a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code.",
+      "text": "Transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development.",
       "demoUrl": "https://technigo-project-design-handoff-vite.netlify.app/",
       "githubUrl": "https://github.com/Lovisaaberg/technigo-project-design-handoff-vite?tab=readme-ov-file"
     },
     {
       "id": "3",
       "image": "/image3.png",
-      "tags": ["HTML5", "CSS3", "JavaScript", "React", "APIs"],
+      "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Labyrinth",
       "text": "A text-based adventure provided by an API in form of a labyrinth. The goal was to use the API and build an interface that gives the user control over what to do next. Focus was on the global state management with Zustand to store the data from the API into the global state.",
       "demoUrl": "https://project-labyrinth-zustand-lovisa.netlify.app",
@@ -30,7 +30,7 @@
     {
       "id": "4",
       "image": "/image4.png",
-      "tags": ["HTML5", "CSS3", "JavaScript", "React", "APIs"],
+      "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Movies",
       "text": "Utilizing themoviedb.org's API to showcase movies and their details. Features fetching popular movies, rendering movie specifics, and managing image URLs. Designed with a focus on responsiveness and accessibility. Enhancements include error handling, loading states, and dynamic movie lists.",
       "demoUrl": "https://project-movies-by-lovisa.netlify.app",
@@ -39,9 +39,9 @@
     {
       "id": "5",
       "image": "/image5.png",
-      "tags": ["HTML5", "CSS3", "JavaScript", "React", "APIs"],
+      "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Happy Thoughts",
-      "text": "Happy Thoughts App: A React project focused on state management, API interactions for fetching and posting data.",
+      "text": "A React project focused on state management, API interactions for fetching and posting data.",
       "demoUrl": "https://project-happy-thoughts-by-lovisa.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-happy-thoughts-vite"
     },
@@ -57,7 +57,7 @@
     {
       "id": "7",
       "image": "/image7.png",
-      "tags": ["HTML5", "CSS3", "JavaScript", "APIs"],
+      "tags": ["HTML5", "CSS3", "JavaScript", "API's"],
       "title": "Weather App",
       "text": "This project is about building a simple weather app that uses a weather API to tell today's weather, city, temp, sunrise/sunset and a 5-day forecast.",
       "demoUrl": "https://lovisas-weather-app.netlify.app/",
