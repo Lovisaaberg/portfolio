@@ -38,7 +38,7 @@ const Category = styled.div`
   margin-top: 30px;
 `
 
-const CategoryTitle = styled.h4`
+const CategoryTitle = styled.h3`
   font-size: var(--font-size-h4-mob);
   font-family: var(--font-family-headlines);
   margin-top: 60px;

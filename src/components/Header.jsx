@@ -1,7 +1,7 @@
 import { Typewriter } from "react-simple-typewriter"
 import styled from "styled-components"
 import Lottie from "lottie-react"
-import chevronDown from "../assets/animations/chevronDown.json"
+import chevronArrow from "../assets/animations/chevronArrow.json"
 
 const HeaderContainer = styled.div`
   background-color: #171824;
@@ -71,7 +71,7 @@ const SubTitle = styled.p`
   align-self: center;
 
   @media (min-width: 768px) {
-    margin-left: 340px;
+    margin-left: 280px;
   }
 `
 
@@ -85,7 +85,7 @@ const CodeText = styled.span`
   margin-right: 800px;
   display: block;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     display: none;
   }
 `
@@ -117,7 +117,7 @@ export const Header = () => {
   }
 
   return (
-    <HeaderContainer>
+    <HeaderContainer id="header">
       <Menu>
         <MenuLink onClick={() => scrollToSection("projects")}>
           .Projects
@@ -161,7 +161,7 @@ export const Header = () => {
       </IntroText>
 
       <AnimationWrapper onClick={() => scrollToSection("projects")}>
-        <Lottie animationData={chevronDown} loop={true} />
+        <Lottie animationData={chevronArrow} loop={true} />
       </AnimationWrapper>
     </HeaderContainer>
   )

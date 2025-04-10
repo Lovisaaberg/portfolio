@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
   --font-family-headlines: "Roboto mono", sans-serif;
   --font-family-text: "Space mono", sans-serif;
 
-  --font-size-h1-desktop: 94px;
+  --font-size-h1-desktop: 86px;
   --font-size-h2-desktop: 80px;
   --font-size-h3-desktop: 30px;
   --font-size-small: 16px;

@@ -23,12 +23,14 @@ const CardContainer = styled.div`
 const ImageWrapper = styled.div`
   overflow: hidden;
   border-radius: 10px;
+  flex-shrink: 0;
 `
 
 const Image = styled.img`
   width: 240px;
   height: 240px;
   transition: transform 0.4s ease;
+  object-fit: cover;
 
   @media (min-width: 621px) {
     width: 400px;

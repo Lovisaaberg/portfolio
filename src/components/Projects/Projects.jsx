@@ -90,7 +90,7 @@ export const Projects = () => {
 
       {visibleProjects < projects.length && (
         <ShowMoreWrapper onClick={handleShowMore}>
-          <span className="text">Show More Projects</span>
+          <span className="text">Show More Projects...</span>
           <img src={chevron} alt="Show more" />
         </ShowMoreWrapper>
       )}
