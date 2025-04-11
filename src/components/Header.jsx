@@ -1,7 +1,8 @@
+import { Menu } from "../components/Navigation/Menu"
 import { Typewriter } from "react-simple-typewriter"
 import styled from "styled-components"
 import Lottie from "lottie-react"
-import chevronArrow from "../assets/animations/chevronArrow.json"
+import chevronArrow from "../assets/animations/chevronDown.json"
 
 const HeaderContainer = styled.div`
   background-color: #171824;
@@ -14,33 +15,6 @@ const HeaderContainer = styled.div`
 
   @media (min-width: 768px) {
     padding: 40px 60px;
-  }
-`
-
-const Menu = styled.ul`
-  display: none;
-
-  @media (min-width: 768px) {
-    list-style: none;
-    display: flex;
-    font-family: var(--font-family-text);
-    font-size: var(--font-size-medium);
-    color: var(--text-color-primary);
-    margin-bottom: 60px;
-    gap: 36px;
-    justify-content: flex-end;
-    width: 100%;
-  }
-`
-
-const MenuLink = styled.li`
-  @media (min-width: 768px) {
-    cursor: pointer;
-    transition: color 0.3s;
-
-    &:hover {
-      color: #8d72f8;
-    }
   }
 `
 
@@ -118,19 +92,10 @@ export const Header = () => {
 
   return (
     <HeaderContainer id="header">
-      <Menu>
-        <MenuLink onClick={() => scrollToSection("projects")}>
-          .Projects
-        </MenuLink>
-        <MenuLink onClick={() => scrollToSection("skills")}>
-          .Skills & Tech
-        </MenuLink>
-        <MenuLink onClick={() => scrollToSection("contact")}>.Contact</MenuLink>
-      </Menu>
-
+      <Menu scrollToSection={scrollToSection} />
       <CodeText>{`
       <body>
-        <header>
+        <header> 
             <h1>
 `}</CodeText>
 

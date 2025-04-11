@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import ProfileImg from "/me.png"
-import chevronArrow from "../assets/animations/chevronArrow.json"
+import chevronArrow from "../assets/animations/chevronDown.json"
 import Lottie from "lottie-react"
 import emailIcon from "../assets/icons/email.png"
 import phoneIcon from "../assets/icons/telephone.png"
@@ -65,6 +65,10 @@ const EmailInfo = styled.a`
   img {
     margin-right: 8px;
   }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 const PhoneInfo = styled.a`
   display: flex;
@@ -78,6 +82,10 @@ const PhoneInfo = styled.a`
 
   img {
     margin-right: 8px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
   }
 `
 
