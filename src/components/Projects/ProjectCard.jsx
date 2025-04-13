@@ -119,7 +119,7 @@ export const ProjectCard = ({
   return (
     <CardContainer $reverseOrder={reverseOrder}>
       <ImageWrapper>
-        <Image src={image} alt={title} />
+        <Image src={image} alt={`Image of ${title}`} loading="lazy" />
       </ImageWrapper>
       <Content>
         <TagContainer>
@@ -135,13 +135,19 @@ export const ProjectCard = ({
           <ButtonComponent
             label="Live Demo"
             variant="primary"
-            onClick={() => window.open(demoUrl, "_blank")}
+            onClick={() =>
+              window.open(demoUrl, "_blank", "noopener,noreferrer")
+            }
+            aria-label={`Open live demo for ${title}`}
           />
 
           <ButtonComponent
             label="View Code"
             variant="secondary"
-            onClick={() => window.open(githubUrl, "_blank")}
+            onClick={() =>
+              window.open(githubUrl, "_blank", "noopener,noreferrer")
+            }
+            aria-label={`View code for ${title}`}
           />
         </ButtonWrapper>
       </Content>

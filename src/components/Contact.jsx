@@ -8,7 +8,7 @@ import linkeIndInIcon from "../assets/icons/linkedIn.png"
 import gitHubIcon from "../assets/icons/gitHub.png"
 
 const ContactSection = styled.section`
-  padding: 100px 40px 120px 40px;
+  padding: 100px 40px 30px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +42,7 @@ const AnimationWrapper = styled.div`
   align-items: center;
   cursor: pointer;
   transform: rotate(180deg);
+  margin-top: 40px;
 `
 
 const ContactWrapper = styled.div`
@@ -149,6 +150,7 @@ export const Contact = () => {
           href="https://www.linkedin.com/in/lovisaaberg/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Go to Lovisa Åbergs LinkedIn-profile"
         >
           <img
             src={linkeIndInIcon}
@@ -162,8 +164,9 @@ export const Contact = () => {
           href="https://github.com/Lovisaaberg"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Go to Lovisa Åbergs GitHub-profile"
         >
-          <img src={gitHubIcon} width="40px" height="40px" />
+          <img src={gitHubIcon} alt="GitHub icon" width="40px" height="40px" />
         </GitHubLink>
       </LinksWrapper>
 

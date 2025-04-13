@@ -43,6 +43,7 @@ const CategoryTitle = styled.h3`
   font-family: var(--font-family-headlines);
   margin-top: 60px;
   margin-bottom: 16px;
+  color: var(--menu-hover-color);
 `
 
 const SkillsList = styled.ul`

@@ -77,7 +77,7 @@ export const Projects = () => {
         {projects.slice(0, visibleProjects).map((project, index) => (
           <ProjectCard
             key={project.id}
-            image={project.image}
+            image={project.image || "defaultImage.png"}
             tags={project.tags}
             title={project.title}
             text={project.text}
@@ -89,7 +89,10 @@ export const Projects = () => {
       </ProjectsWrapper>
 
       {visibleProjects < projects.length && (
-        <ShowMoreWrapper onClick={handleShowMore}>
+        <ShowMoreWrapper
+          onClick={handleShowMore}
+          aria-label="Show more projects"
+        >
           <span className="text">Show More Projects...</span>
           <img src={chevron} alt="Show more" />
         </ShowMoreWrapper>

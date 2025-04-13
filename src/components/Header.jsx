@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Lottie from "lottie-react"
 import chevronArrow from "../assets/animations/chevronDown.json"
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   background-color: #171824;
   height: 100vh;
   display: flex;
@@ -109,7 +109,7 @@ export const Header = () => {
        </header>
     </body>`}</CodeText>
 
-      <IntroText>
+      <IntroText aria-live="polite">
         <Typewriter
           words={[
             "Welcome to my portfolio!",
@@ -125,7 +125,10 @@ export const Header = () => {
         />
       </IntroText>
 
-      <AnimationWrapper onClick={() => scrollToSection("projects")}>
+      <AnimationWrapper
+        onClick={() => scrollToSection("projects")}
+        aria-label="Scroll to projects section"
+      >
         <Lottie animationData={chevronArrow} loop={true} />
       </AnimationWrapper>
     </HeaderContainer>

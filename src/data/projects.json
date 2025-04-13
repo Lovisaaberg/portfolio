@@ -3,18 +3,18 @@
     {
       "id": "1",
       "image": "/image1.png",
-      "tags": ["HTML5", "Styled Components", "JavaScript", "React", "React Router", "API's"],
+      "tags": ["React", "React Router", "JavaScript", "HTML5", "Styled Components", "API's"],
       "title": "The Solar System Travel Guide",
-      "text": "We designed and built a fullstack app in tree weeks, applying everything we had learned throughout the course. We followed an agile process, used GitHub for collaboration, and regularly demoed our progress. The stack included React with React Router for the frontend, Node.js, Express, and MongoDB for the backend, with deployment via Netlify and Render. We prioritized accessibility and responsiveness, following WCAG guidelines, created the design in Figma and tested the API with Postman.",
+      "text": "We designed and built a fullstack app in three weeks, applying everything we had learned during the course. We followed an agile process, collaborated on GitHub, and regularly demoed our progress. The stack included React with React Router for the frontend, and Node.js, Express, and MongoDB for the backend, deployed via Netlify and Render. We prioritized accessibility and responsiveness by following WCAG guidelines, created the design in Figma, and tested the API using Postman.",
       "demoUrl": "https://thesolarsystemtravelguide.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-final"
     },
     {
       "id": "2",
       "image": "/image2.png",
-      "tags": ["HTML5", "Tailwind CSS", "JavaScript", "React"],
+      "tags": ["React", "JavaScript","Tailwind CSS","HTML5"],
       "title": "Crossfit Mamas - Design handoff",
-      "text": "Transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between UX-design and development.",
+      "text": "Transformed a UX design student’s handoff into a React-based landing page for a gym/fitness club. This project bridged the gap between UX design and development.",
       "demoUrl": "https://technigo-project-design-handoff-vite.netlify.app/",
       "githubUrl": "https://github.com/Lovisaaberg/technigo-project-design-handoff-vite?tab=readme-ov-file"
     },
@@ -23,7 +23,7 @@
       "image": "/image3.png",
       "tags": ["React", "JavaScript", "HTML5", "CSS3", "API's", "Zustand"],
       "title": "The Maze",
-      "text": "A text-based adventure provided by an API in form of a labyrinth. The goal was to use the API and build an interface that gives the user control over what to do next. Focus was on the global state management with Zustand to store the data from the API into the global state.",
+      "text": "A text-based adventure provided by an API in form of a labyrinth. The goal was to use the API and build an interface that gives the user control over what to do next. Focus was the global state management with Zustand to store the data from the API into the global state.",
       "demoUrl": "https://project-labyrinth-zustand-lovisa.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-labyrinth-zustand-vite"
     },
@@ -32,7 +32,7 @@
       "image": "/image4.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Popular Movies",
-      "text": "Utilizing themoviedb.org's API to showcase movies and their details. Features fetching popular movies, rendering movie specifics, and managing image URLs. Designed with a focus on responsiveness and accessibility. Enhancements include error handling, loading states, and dynamic movie lists.",
+      "text": "Utilizing themoviedb.org's API to showcase movies and their details. Features include fetching popular movies, rendering movie details, and managing image URLs. Designed with a focus on responsiveness and accessibility. Enhancements include error handling, loading states, and dynamic movie lists.",
       "demoUrl": "https://project-movies-by-lovisa.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-movies-vite"
     },
@@ -41,7 +41,7 @@
       "image": "/image5.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Happy Thoughts",
-      "text": "A fullstack React project focused on state management, API interactions for fetching and posting data in a feed.",
+      "text": "A fullstack React project focused on state management and API interactions for fetching and posting data in a feed.",
       "demoUrl": "https://project-happy-thoughts-by-lovisa.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-happy-thoughts-vite"
     },
@@ -49,8 +49,8 @@
       "id": "6",
       "image": "/image6.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React"],
-      "title": "Survey",
-      "text": "A React project to create a customizable survey form. Focus on React state and form control. After submission, users see a summary. Design is flexible but should prioritise accessibility.",
+      "title": "Survey - The Science of Happiness",
+      "text": "A React project to create a customizable survey form. Focus on React state and form control. After submission, users see a summary. Design is flexible but should prioritize accessibility.",
       "demoUrl": "https://clinquant-malasada-d51399.netlify.app/",
       "githubUrl": "https://github.com/Lovisaaberg/project-survey-vite"
     },
@@ -68,7 +68,7 @@
       "image": "/image8.png",
       "tags": ["HTML5", "CSS3", "JavaScript"],
       "title": "Library",
-      "text": "This is a digital library using an array of books, where you can sort the books, use a filter or a button to generate a random book.",
+      "text": "This is a digital library using an array of books, where you can sort the books, filter the books or generate a random one using a button.",
       "demoUrl": "https://sensational-parfait-a86405.netlify.app/",
       "githubUrl": "https://github.com/Lovisaaberg/project-library"
     },
@@ -77,7 +77,7 @@
       "image": "/image9.png",
       "tags": ["HTML5", "CSS3", "JavaScript"],
       "title": "The Dinosaur Bot",
-      "text": "This interactive bot is built with JavaScript, HTML and CSS, focusing on DOM manipulation, functions and scope.",
+      "text": "This interactive bot is built with JavaScript, HTML and CSS, focusing on DOM manipulation, functions, and JavaScript scope.",
       "demoUrl": "https://dinosaurfactbot.netlify.app/",
       "githubUrl": "https://github.com/Lovisaaberg/chatbot-project"
     }

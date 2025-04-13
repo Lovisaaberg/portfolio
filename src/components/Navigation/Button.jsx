@@ -19,6 +19,7 @@ const Button = styled.button`
 
   @media (min-width: 768px) {
     width: 182px;
+    font-size: var(--font-size-large);
   }
 `
 
@@ -39,10 +40,20 @@ const SecondaryButton = styled(Button)`
   }
 `
 
-const ButtonComponent = ({ label, onClick, variant = "primary" }) => {
-  const ButtonToUse = variant === "secondary" ? SecondaryButton : PrimaryButton
+const ButtonComponent = ({
+  label,
+  onClick,
+  variant = "primary",
+  ariaLabel,
+}) => {
+  const SelectedButton =
+    variant === "secondary" ? SecondaryButton : PrimaryButton
 
-  return <ButtonToUse onClick={onClick}>{label}</ButtonToUse>
+  return (
+    <SelectedButton onClick={onClick} aria-label={ariaLabel}>
+      {label}
+    </SelectedButton>
+  )
 }
 
 export default ButtonComponent
