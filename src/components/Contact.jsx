@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import ProfileImg from "/me.png"
+import EasterEgg from "/easter.gif"
 import chevronArrow from "../assets/animations/chevronDown.json"
 import Lottie from "lottie-react"
 import emailIcon from "../assets/icons/email.png"
@@ -29,20 +30,49 @@ const ContactTitle = styled.h2`
   }
 `
 
-const ProfilePicture = styled.img`
+const ProfileWrapper = styled.div`
+  position: relative;
   width: 173px;
+  height: 173px;
+
+  &:hover img:first-child {
+    opacity: 0;
+  }
+
+  &:hover img:last-child {
+    opacity: 1;
+  }
+`
+
+const ProfilePicture = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 173px;
+  height: 173px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+`
+
+const MainProfilePicture = styled(ProfilePicture)`
+  z-index: 2;
+`
+
+const HiddenGif = styled(ProfilePicture)`
+  opacity: 0;
+  z-index: 1;
 `
 
 const AnimationWrapper = styled.div`
   width: 100px;
   height: 100px;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transform: rotate(180deg);
-  margin-top: 40px;
 `
 
 const ContactWrapper = styled.div`
@@ -71,6 +101,7 @@ const EmailInfo = styled.a`
     transform: scale(1.05);
   }
 `
+
 const PhoneInfo = styled.a`
   display: flex;
   align-items: center;
@@ -122,12 +153,16 @@ export const Contact = () => {
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
   }
+
   return (
     <ContactSection>
       <ContactTitle>&lt;CONTACT ME&gt;</ContactTitle>
 
       <ContactWrapper>
-        <ProfilePicture src={ProfileImg} alt="Profile picture" />
+        <ProfileWrapper>
+          <MainProfilePicture src={ProfileImg} alt="Profile picture" />
+          <HiddenGif src={EasterEgg} alt="Easter egg" />
+        </ProfileWrapper>
 
         <EmailInfo href="mailto:lovisa.aaberg@gmail.com" target="_blank">
           <img src={emailIcon} alt="Email icon" width="30px" height="30px" />

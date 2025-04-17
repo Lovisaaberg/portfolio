@@ -125,10 +125,7 @@ export const Header = () => {
         />
       </IntroText>
 
-      <AnimationWrapper
-        onClick={() => scrollToSection("projects")}
-        aria-label="Scroll to projects section"
-      >
+      <AnimationWrapper onClick={() => scrollToSection("projects")}>
         <Lottie animationData={chevronArrow} loop={true} />
       </AnimationWrapper>
     </HeaderContainer>

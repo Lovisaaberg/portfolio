@@ -16,6 +16,30 @@ const FooterText = styled.p`
   font-family: var(--font-family-text);
   font-size: 14px;
   color: #a189ff;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+
+  &:hover::after {
+    content: "Happy Easter! 🐣";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-size: 16px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 `
 
 export const Footer = () => {
