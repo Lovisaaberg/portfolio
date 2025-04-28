@@ -5,7 +5,7 @@
       "image": "/image1.png",
       "tags": ["React", "React Router", "JavaScript", "HTML5", "Styled Components", "API's"],
       "title": "The Solar System Travel Guide",
-      "text": "We designed and built a fullstack app in three weeks, applying everything we had learned during the course. We followed an agile process, collaborated on GitHub, and regularly demoed our progress. The stack included React with React Router for the frontend, and Node.js, Express, and MongoDB for the backend, deployed via Netlify and Render. We prioritized accessibility and responsiveness by following WCAG guidelines, created the design in Figma, and tested the API using Postman.",
+      "text": "We designed and built a fullstack application in three weeks, applying everything we had learned at Technigo. We worked in an agile way, collaborated through GitHub, and regularly demoed our progress. The stack included React with React Router on the frontend, and Node.js, Express, and MongoDB on the backend, deployed via Netlify and Render. We prioritized accessibility and responsiveness by following WCAG guidelines, created the design in Figma, and tested the API using Postman.",
       "demoUrl": "https://thesolarsystemtravelguide.netlify.app",
       "githubUrl": "https://github.com/Lovisaaberg/project-final"
     },
