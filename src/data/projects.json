@@ -2,6 +2,15 @@
    [
     {
       "id": "1",
+      "image": "/image10.png",
+      "tags": ["React", "JavaScript", "Vite",  "Supabase", "Stripe", "Tailwind CSS", "Zustand", "Figma", "Accessibility"],
+      "title": "LÖV. Webshop",
+      "text": "A responsive webshop built with React and Vite. We used Supabase as a database to store product data and images, and integrated Stripe for an easy checkout experience. I created the design in Figma and collaborated on the frontend with a focus on accessibility and a clear user flow.",
+      "demoUrl": "https://plantshop-lov.netlify.app/",
+      "githubUrl": "https://github.com/Collaborators-in-Tech/webshop"
+    },
+    {
+      "id": "2",
       "image": "/image1.png",
       "tags": ["React", "React Router", "JavaScript", "HTML5", "Styled Components", "API's"],
       "title": "The Solar System Travel Guide",
@@ -10,7 +19,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-final"
     },
     {
-      "id": "2",
+      "id": "3",
       "image": "/image2.png",
       "tags": ["React", "JavaScript","Tailwind CSS","HTML5"],
       "title": "Crossfit Mamas - Design handoff",
@@ -19,7 +28,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/technigo-project-design-handoff-vite?tab=readme-ov-file"
     },
     {
-      "id": "3",
+      "id": "4",
       "image": "/image3.png",
       "tags": ["React", "JavaScript", "HTML5", "CSS3", "API's", "Zustand"],
       "title": "The Maze",
@@ -28,7 +37,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-labyrinth-zustand-vite"
     },
     {
-      "id": "4",
+      "id": "5",
       "image": "/image4.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Popular Movies",
@@ -37,7 +46,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-movies-vite"
     },
     {
-      "id": "5",
+      "id": "6",
       "image": "/image5.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React", "API's"],
       "title": "Happy Thoughts",
@@ -46,7 +55,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-happy-thoughts-vite"
     },
     {
-      "id": "6",
+      "id": "7",
       "image": "/image6.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "React"],
       "title": "Survey - The Science of Happiness",
@@ -55,7 +64,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-survey-vite"
     },
     {
-      "id": "7",
+      "id": "8",
       "image": "/image7.png",
       "tags": ["HTML5", "CSS3", "JavaScript", "API's"],
       "title": "Weather App",
@@ -64,7 +73,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-weather-app"
     },
     {
-      "id": "8",
+      "id": "9",
       "image": "/image8.png",
       "tags": ["HTML5", "CSS3", "JavaScript"],
       "title": "Library",
@@ -73,7 +82,7 @@
       "githubUrl": "https://github.com/Lovisaaberg/project-library"
     },
     {
-      "id": "9",
+      "id": "10",
       "image": "/image9.png",
       "tags": ["HTML5", "CSS3", "JavaScript"],
       "title": "The Dinosaur Bot",

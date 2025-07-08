@@ -57,6 +57,10 @@ const SkillsItem = styled.li`
   @media (min-width: 768px) {
     font-size: var(--font-size-medium);
   }
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 export const Skills = () => {
